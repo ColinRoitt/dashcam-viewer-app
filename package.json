@@ -1,0 +1,16 @@
+{
+  "name": "dashcam-viewer-app",
+  "version": "1.0.0",
+  "description": "Electron app for viewing dashcam footage by time and date.",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.1.0"
+  },
+  "dependencies": {
+    "ffprobe-static-electron": "^2.0.2",
+    "fluent-ffmpeg": "^2.1.3"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- import bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- import font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- import stylesheet style.css -->
+  <link rel="stylesheet" href="style.css">
+  <title>Garmin Dashcam Video Viewer</title>
+</head>
+<body>
+  <div class="cont p-2 d-flex flex-column" style="height: 100vh;">
+    <h1>Garmin Dashcam Video Viewer</h1>
+    <div class="flex row align-items-center" id="folder-bar">
+      <button id="select-folder" class="btn btn-primary">Select Folder</button>
+      <i class="fas fa-spinner fa-spin ml-3" id="spinner" style="display: none;"></i>
+      <span id="loaded-folder" class="ml-3"></span>
+    </div>
+    <div class="view-container d-flex flex-row" style="height: 89vh;">
+      <div id="selector-container" class="w-25 overflow-auto">
+      </div>
+      <div id="video-container" class="w-75 d-flex flex-column justify-content-start">
+        <video id="video" controls style="width:100%; max-height: 45%;"></video>
+        <div class="controls p-2">
+          <button id="prev" class="btn btn-secondary"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button>
+          <button id="play-pause" class="btn btn-primary"><i class="fas fa-play"></i></button>
+          <button id="next" class="btn btn-secondary"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <h3 id="video-list-header">Video List - No trip loaded</h3>
+        <div id="video-list" class="flex column overflow-auto flex-fill">
+          <div id="video-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>

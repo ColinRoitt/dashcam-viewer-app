@@ -6,3 +6,6 @@ Made in electron and otherwise just good old-fashioned HTML CSS and JS
 
 ## Run
 Simply run `npm i` and `npm start` to get going.
+
+## Build
+To create an executable on your platform run `npm run make` and the output files will appear in the folder `/out`

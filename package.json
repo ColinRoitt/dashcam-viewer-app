@@ -8,9 +8,5 @@
   },
   "devDependencies": {
     "electron": "^26.1.0"
-  },
-  "dependencies": {
-    "ffprobe-static-electron": "^2.0.2",
-    "fluent-ffmpeg": "^2.1.3"
   }
 }

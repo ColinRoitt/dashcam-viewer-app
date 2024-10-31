@@ -1,10 +1,6 @@
 const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs-extra');
-const ffprobePathModule = require('ffprobe-static-electron');
-const ffprobePath = ffprobePathModule.path;
-var ffmpeg = require('fluent-ffmpeg');
-ffmpeg.setFfmpegPath(ffprobePath)
 
 function createWindow() {
   const win = new BrowserWindow({
